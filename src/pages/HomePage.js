@@ -1,23 +1,27 @@
+import profile from "../assets/profile-img.jpg"
+import BsSkype from "react-icons/bs"; 
+
 const HomePage = () => {
 
     return (
         <>
             {/* <!-- ======= Mobile nav toggle button ======= --> */}
-            <i className="bi bi-list mobile-nav-toggle d-xl-none"></i>
+            <i className="lg:invisible md:invisible xl:invisible sm:"></i>
 
             {/* <!-- ======= Header ======= --> */}
-            <header id="header">
-                <div className="d-flex flex-column">
+            <header className="sticky top-0 w-80 h-screen bg-bgDark">
+                <div className="m-auto w-container">
 
                 <div className="profile">
-                    <img src="assets/img/profile-img.jpg" alt="" className="img-fluid rounded-circle"/>
-                    <h1 className="text-light"><a href="index.html">Alex Smith</a></h1>
-                    <div className="social-links mt-3 text-center">
-                    <a href="/" className="twitter"><i className="bx bxl-twitter"></i></a>
-                    <a href="/" className="facebook"><i className="bx bxl-facebook"></i></a>
-                    <a href="/" className="instagram"><i className="bx bxl-instagram"></i></a>
-                    <a href="/" className="google-plus"><i className="bx bxl-skype"></i></a>
-                    <a href="/" className="linkedin"><i className="bx bxl-linkedin"></i></a>
+                    <div className="h-10"></div>
+                    <img src={profile} alt="images" className="m-auto w-40 rounded-curve border-neutral-700 border-8"/>
+                    <h1 className="text-white text-2xl mt-6 font-extrabold text-center capitalize">nazir abubakar</h1>
+                    <div className="w-4/5 flex justify-between h-20 mt-10 text-white">
+                    <i class="fa-brands fa-twitter text-white"></i>
+                    <a href="/" className="facebook"><BsSkype/></a>
+                    <a href="/" className="instagram"><i class="fa-brands fa-google-plus-g text-white"></i></a>
+                    <a href="/" className="google-plus"><i class="fa-brands fa-square-twitter text-white"></i></a>
+                    <a href="/" className="linkedin"><i class="fa-brands fa-linkedin-in text-white"></i></a>
                     </div>
                 </div>
 

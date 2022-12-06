@@ -10,6 +10,14 @@
           "text-align-last"
         ]
       }
+    ],
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "link[referrerpolicy]"
+        ]
+      }
     ]
   }
 }
